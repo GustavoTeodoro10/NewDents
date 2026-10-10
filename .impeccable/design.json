@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T23:59:00-03:00",
+  "title": "Design System: New Dents Mauá",
+  "extensions": {
+    "colorMeta": {
+      "violet-brand": { "role": "primary", "displayName": "Violeta do Logo", "canonical": "#5f2a6e", "tonalRamp": ["#1f0d27", "#2a1235", "#3f1a4e", "#5f2a6e", "#7f4f8d", "#a07fae", "#c9b0d6", "#eaddf2"] },
+      "mauve-logo": { "role": "secondary", "displayName": "Malva do Logo", "canonical": "#8f6b9b", "tonalRamp": ["#3b2842", "#563d60", "#6f527b", "#8f6b9b", "#a98cb3", "#c1a9c9", "#d8c8de", "#efe6f2"] },
+      "ground": { "role": "neutral", "displayName": "Fundo", "canonical": "#fcfafd", "tonalRamp": ["#2a1235", "#5a4764", "#8a7a94", "#b9aec1", "#d8c2e6", "#eaddf2", "#f5eff9", "#fcfafd"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "H1 do Hero, uma vez por página." },
+      "headline": { "displayName": "Título de seção", "purpose": "H2 de cada seção." },
+      "body": { "displayName": "Texto", "purpose": "Parágrafos, 62ch no máximo." }
+    },
+    "shadows": [
+      { "name": "cta-lift", "value": "0 8px 20px -8px rgba(95,42,110,0.55)", "purpose": "Botão principal e botão flutuante." },
+      { "name": "cta-lift-hover", "value": "0 14px 26px -10px rgba(95,42,110,0.6)", "purpose": "Botão principal no hover." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Revelar ao rolar, botões, menu e botão flutuante." },
+      { "name": "press", "value": "90ms, scale(0.97)", "purpose": "Feedback imediato de toque em botões e redes sociais." },
+      { "name": "reveal", "value": "560ms, translateY(14px) para 0", "purpose": "Entrada única de cada bloco, em escada de 60 a 70ms; estrelas acendem a 45ms entre si." }
+    ],
+    "breakpoints": [
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Agendar avaliação, leva ao WhatsApp. Pílula violeta com ícone.",
+      "html": "<a class=\"ds-btn\" href=\"#\">Agendar avaliação</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.6rem;border-radius:999px;background:#5f2a6e;color:#fff;font-weight:600;font-size:1rem;box-shadow:0 8px 20px -8px rgba(95,42,110,.55);transition:transform .25s cubic-bezier(.16,1,.3,1),background-color .2s}.ds-btn:hover{background:#4a1f58;transform:translateY(-2px)}.ds-btn:focus-visible{outline:3px solid #5f2a6e;outline-offset:3px}"
+    },
+    {
+      "name": "Botão claro",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Mesmo CTA, para campos violeta.",
+      "html": "<div style=\"background:#5f2a6e;padding:24px\"><a class=\"ds-btn-light\" href=\"#\">Agendar avaliação</a></div>",
+      "css": ".ds-btn-light{display:inline-flex;align-items:center;min-height:52px;padding:0 1.6rem;border-radius:999px;background:#fff;color:#5f2a6e;font-weight:600}.ds-btn-light:hover{background:#f5eff9}.ds-btn-light:focus-visible{outline:3px solid #fff;outline-offset:3px}"
+    },
+    {
+      "name": "Tile de tratamento",
+      "kind": "card",
+      "refersTo": "tile-lilac",
+      "description": "Título grande e uma frase, sobre lilás.",
+      "html": "<article class=\"ds-tile\"><h3>Ortodontia e alinhadores</h3><p>Aparelhos e alinhadores Invisalign para organizar o sorriso.</p></article>",
+      "css": ".ds-tile{background:#eaddf2;color:#2a1235;border-radius:28px;padding:2.5rem;min-height:15rem;display:flex;flex-direction:column;justify-content:space-between}.ds-tile h3{font-size:2rem;font-weight:700;line-height:1.1;margin:0}.ds-tile p{margin:0;color:#5a4764;max-width:36ch}"
+    },
+    {
+      "name": "Avaliação",
+      "kind": "custom",
+      "refersTo": "review",
+      "description": "Citação do Google com régua superior, sem caixa.",
+      "html": "<figure class=\"ds-review\"><blockquote>“Atendimento excelente super indico.”</blockquote><figcaption>Nome do paciente<small>Avaliação no Google</small></figcaption></figure>",
+      "css": ".ds-review{border-top:2px solid #5f2a6e;padding-top:1.25rem;margin:0;color:#2a1235}.ds-review blockquote{margin:.85rem 0 0}.ds-review figcaption{margin-top:1rem;font-weight:600}.ds-review small{display:block;font-weight:400;color:#5a4764}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Recepção",
+    "overview": "A página fala do jeito que a recepção da clínica fala: clara, calorosa e sem pressa. Fundo quase branco com um fio de violeta, um único violeta profundo tirado do logotipo e tinturas lilás para os campos de repouso. A única peça performada é a vinheta animada do logotipo do cliente.",
+    "keyCharacteristics": [
+      "Um acento só (violeta do logo), usado em campos grandes e no botão principal.",
+      "Tipografia como estrutura: títulos grandes, sem ícones decorativos nem ornamentos.",
+      "Branco do vídeo dissolvido no fundo, sem caixas ao redor do logotipo.",
+      "Fotografia só do que é real (fachada); onde não há foto, há cor."
+    ],
+    "rules": [
+      { "name": "The One Voice Rule", "body": "O violeta é o único acento. Nenhuma segunda cor de destaque entra na página.", "section": "colors" },
+      { "name": "The Never-Text Rule", "body": "O malva do logo não carrega texto.", "section": "colors" },
+      { "name": "The Weight-Not-Color Rule", "body": "Ênfase dentro de um título vem de peso ou do violeta da marca, nunca de gradiente nem de outra família.", "section": "typography" }
+    ],
+    "dos": [
+      "Do usar \"Agendar avaliação\" como único rótulo de contato, sempre com data-gc-event próprio.",
+      "Do manter texto de apoio em #5a4764 ou mais escuro sobre fundos claros.",
+      "Do deixar a página sem imagem onde não há foto real: use campos de cor.",
+      "Do respeitar prefers-reduced-motion: sem vídeo, sem revelar ao rolar."
+    ],
+    "donts": [
+      "Don't redesenhar, recolorir ou limpar o logotipo.",
+      "Don't usar fotos de banco de imagens como se fossem da clínica.",
+      "Don't colocar texto em malva (#8f6b9b).",
+      "Don't repetir caixas de mesmo tamanho com ícone, título e texto."
+    ]
+  }
+}

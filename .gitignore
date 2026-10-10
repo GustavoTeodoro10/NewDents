@@ -1,0 +1,6 @@
+.claude/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.DS_Store
+Thumbs.db
